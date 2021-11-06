@@ -21,5 +21,23 @@ Pretrained models for CDNet-2014 and VL-CMU-CD are available. You can download t
   - We uploaded four models trained on VL-CMU-CD dataset, ther are SViT_E1_D1_16, SViT_E1_D1_32, Res_SViT_E1_D1_16 and Res_SViT_E1_D1_32.
 ## Test
 Before test, please download datasets and predtrained models. Copy pretrained models to folder './dataset_name/outputs/best_weights', and run the following command: 
-> cd TransCD_ROOT  
-> python test
+```
+cd TransCD_ROOT
+python test.py --net_cfg <net name> --train_cfg <training configuration>
+```  
+Use `--save_changemap True` to save predicted changemaps.
+For example:
+```
+python test.py --net_cfg SVit_E1_D1_32 --train_cfg CDNet_2014 --save_changemap True
+```
+
+### Training
+Before training, please download datasets and revise dataset path in configs.py to your path.
+CD TransCD_ROOT
+```
+python train.py --net_cfg <net name> --train_cfg <training configuration>
+```
+For example:
+```
+python train.py --net_cfg Res_SViT_E1_D1_16 --train_cfg VL_CMU_CD
+```
