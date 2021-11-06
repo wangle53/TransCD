@@ -17,7 +17,7 @@ Torchvision 0.7.0
 Pretrained models for CDNet-2014 and VL-CMU-CD are available. You can download them from the following link.
 - CDNet-2014: [[Baiduyun]](https://pan.baidu.com/s/16h6uEMgEkCAJdDZa7lfbag) the password is 78cp. [[GoogleDrive](https://drive.google.com/drive/folders/1bKnTMXRx0Og8lBV7jNC0PdoeKfJ5GeUn?usp=sharing)].
   - We uploaded six models trained on CDNet-2014 dataset, they are SViT_E1_D1_16, SViT_E1_D1_32, SViT_E4_D4_16, SViT_E4_D4_32, Res_SViT_E1_D1_16 and Res_SViT_E4_D4_16.
-- VL-CMU-CD: [[Baiduyun](https://pan.baidu.com/s/1vDKWCW3dO-JX_ET4OgsNww)] the password is ydzl. [[GllgleDrive](https://drive.google.com/drive/folders/1-6BvZLtSbu96cjAW7KpDNNrwPhJz99V3?usp=sharing)].
+- VL-CMU-CD: [[Baiduyun](https://pan.baidu.com/s/1vDKWCW3dO-JX_ET4OgsNww)] the password is ydzl. [[GoogleDrive](https://drive.google.com/drive/folders/1-6BvZLtSbu96cjAW7KpDNNrwPhJz99V3?usp=sharing)].
   - We uploaded four models trained on VL-CMU-CD dataset, ther are SViT_E1_D1_16, SViT_E1_D1_32, Res_SViT_E1_D1_16 and Res_SViT_E1_D1_32.
 ## Test
 Before test, please download datasets and predtrained models. Copy pretrained models to folder './dataset_name/outputs/best_weights', and run the following command: 
