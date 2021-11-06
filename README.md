@@ -31,7 +31,7 @@ For example:
 python test.py --net_cfg SVit_E1_D1_32 --train_cfg CDNet_2014 --save_changemap True
 ```
 
-### Training
+## Training
 Before training, please download datasets and revise dataset path in configs.py to your path.
 CD TransCD_ROOT
 ```
@@ -40,4 +40,15 @@ python train.py --net_cfg <net name> --train_cfg <training configuration>
 For example:
 ```
 python train.py --net_cfg Res_SViT_E1_D1_16 --train_cfg VL_CMU_CD
+```
+## Citing TransCD
+If you use this repository or would like to refer the paper, please use the following BibTex entry.
+```
+@inproceddings{TransCD,
+title={TransCD: Scene Change Detection via Transformer-based Architecture},
+author={ZHIXUE WANG, YU ZHANG*, LIN LUO, NAN WANG},
+journal={Optics Express},
+yera={2021},
+organization={The Optical Society},
+}
 ```
