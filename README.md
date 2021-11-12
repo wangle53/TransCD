@@ -45,7 +45,7 @@ For example:
 python -m visdom.server
 python train.py --net_cfg Res_SViT_E1_D1_16 --train_cfg VL_CMU_CD
 ```
-To display training processing, copy 'http://localhost:8097' to your browser.
+To display training processing, open 'http://localhost:8097' in your browser.
 ## Citing TransCD
 If you use this repository or would like to refer the paper, please use the following BibTex entry.
 ```
