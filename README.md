@@ -22,7 +22,7 @@ Pretrained models for CDNet-2014 and VL-CMU-CD are available. You can download t
 - VL-CMU-CD: [[Baiduyun](https://pan.baidu.com/s/1vDKWCW3dO-JX_ET4OgsNww)] the password is ydzl. [[GoogleDrive](https://drive.google.com/drive/folders/1-6BvZLtSbu96cjAW7KpDNNrwPhJz99V3?usp=sharing)].
   - We uploaded four models trained on VL-CMU-CD dataset, ther are SViT_E1_D1_16, SViT_E1_D1_32, Res_SViT_E1_D1_16 and Res_SViT_E1_D1_32.
 ## Test
-Before test, please download datasets and predtrained models. Copy pretrained models to folder './dataset_name/outputs/best_weights', and run the following command: 
+Before test, please download datasets and pretrained models. Copy pretrained models to folder './dataset_name/outputs/best_weights', and run the following command: 
 ```
 cd TransCD_ROOT
 python test.py --net_cfg <net name> --train_cfg <training configuration>
