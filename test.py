@@ -106,7 +106,7 @@ def main(opt):
                                                                                           out0[3],
                                                                                           out0[4],))
             f.write('\n')  
-    TP = np.mean(cm[0]); FN = np.mean(cm[1]); TN = np.mean(cm[2]); FP = np.mean(cm[3]);
+    TP = np.sum(cm[0]); FN = np.sum(cm[1]); TN = np.sum(cm[2]); FP = np.sum(cm[3]);
     pre, oa, re, f1, kappa = eva.eva_metrics(TP, FP, TN, FN)  
     with open(os.path.join(tcfg.path['outputs'],'test_score.txt'),'a') as f:
         f.write('-'*100) 
@@ -136,7 +136,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--train_cfg', type=str, default='CDNet_2014',help='CDNet_2014 or VL_CMU_CD')
     parser.add_argument(
-        '--save_changemap', type=str, default='False')
+        '--save_changemap', default=False)
     opt = parser.parse_args()
     
     main(opt)
