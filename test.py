@@ -111,14 +111,14 @@ def main(opt):
     with open(os.path.join(tcfg.path['outputs'],'test_score.txt'),'a') as f:
         f.write('-'*100) 
         f.write('\n') 
-        f.write('Time:{},Micro eva,precision:{},oa:{},recall:{},f1:{},kappa:{}'.format(time.strftime('%Y-%m-%d %H:%M:%S'),  
+        f.write('Time:{},Macro eva,precision:{},oa:{},recall:{},f1:{},kappa:{}'.format(time.strftime('%Y-%m-%d %H:%M:%S'),  
                                                                                           np.mean(out[0]), 
                                                                                           np.mean(out[1]), 
                                                                                           np.mean(out[2]),
                                                                                           np.mean(out[3]),
                                                                                           np.mean(out[4]),))
         f.write('\n') 
-        f.write('Time:{},Macro eva,precision:{},oa:{},recall:{},f1:{},kappa:{}'.format(time.strftime('%Y-%m-%d %H:%M:%S'),  
+        f.write('Time:{},Micro eva,precision:{},oa:{},recall:{},f1:{},kappa:{}'.format(time.strftime('%Y-%m-%d %H:%M:%S'),  
                                                                                           pre, 
                                                                                           oa, 
                                                                                           re,
