@@ -49,12 +49,19 @@ To display training processing, open 'http://localhost:8097' in your browser.
 ## Citing TransCD
 If you use this repository or would like to refer the paper, please use the following BibTex entry.
 ```
-@inproceddings{TransCD,
-title={TransCD: Scene Change Detection via Transformer-based Architecture},
-author={ZHIXUE WANG, YU ZHANG*, LIN LUO, NAN WANG},
-journal={Optics Express},
-yera={2021},
-organization={The Optical Society},
+@article{Wang:21,
+author = {Zhixue Wang and Yu Zhang and Lin Luo and Nan Wang},
+journal = {Opt. Express},
+keywords = {Feature extraction; Neural networks; Object detection; Segmentation; Spatial resolution; Vision modeling},
+number = {25},
+pages = {41409--41427},
+publisher = {OSA},
+title = {TransCD: scene change detection via transformer-based architecture},
+volume = {29},
+month = {Dec},
+year = {2021},
+url = {http://www.osapublishing.org/oe/abstract.cfm?URI=oe-29-25-41409},
+doi = {10.1364/OE.440720},
 }
 ```
 ## Reference
