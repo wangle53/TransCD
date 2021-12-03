@@ -132,7 +132,7 @@ if __name__ == '__main__':
     
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--net_cfg', type=str, default='SViT_E1_D1_16',help='choice a TransCD model')
+        '--net_cfg', type=str, default='SViT_E1_D1_16',help='choose a TransCD model')
     parser.add_argument(
         '--train_cfg', type=str, default='CDNet_2014',help='CDNet_2014 or VL_CMU_CD')
     parser.add_argument(
