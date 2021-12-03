@@ -36,7 +36,7 @@ def test_network(category, opt):
     best_model_path = os.path.join(tcfg.path['best_weights_save_dir'], opt.net_cfg + '.pth')
     pretrained_dict = torch.load(best_model_path)['model_state_dict']
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    test_data = OSCD_TEST(tcfg.path['test_txt'], tcfg.path['dataset'], tcfg.im_size, tcfg.dataset_name)
+    test_data = OSCD_TEST(test_dir, tcfg.path['dataset'], tcfg.im_size, tcfg.dataset_name)
     test_dataloader = DataLoader(test_data, batch_size=1, shuffle=False)
     net = TransCDNet(ncfg, tcfg.im_size, False).to(device=device)
     net.load_state_dict(pretrained_dict,False)
@@ -106,7 +106,7 @@ def main(opt):
                                                                                           out0[3],
                                                                                           out0[4],))
             f.write('\n')  
-    TP = np.sum(cm[0]); FN = np.sum(cm[1]); TN = np.sum(cm[2]); FP = np.sum(cm[3]);
+    TP = np.mean(cm[0]); FN = np.mean(cm[1]); TN = np.mean(cm[2]); FP = np.mean(cm[3]);
     pre, oa, re, f1, kappa = eva.eva_metrics(TP, FP, TN, FN)  
     with open(os.path.join(tcfg.path['outputs'],'test_score.txt'),'a') as f:
         f.write('-'*100) 
