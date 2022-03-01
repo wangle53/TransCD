@@ -20,7 +20,7 @@ Pretrained models for CDNet-2014 and VL-CMU-CD are available. You can download t
 - CDNet-2014: [[Baiduyun]](https://pan.baidu.com/s/16h6uEMgEkCAJdDZa7lfbag) the password is 78cp. [[GoogleDrive](https://drive.google.com/drive/folders/1bKnTMXRx0Og8lBV7jNC0PdoeKfJ5GeUn?usp=sharing)].
   - We uploaded six models trained on CDNet-2014 dataset, they are SViT_E1_D1_16, SViT_E1_D1_32, SViT_E4_D4_16, SViT_E4_D4_32, Res_SViT_E1_D1_16 and Res_SViT_E4_D4_16.
 - VL-CMU-CD: [[Baiduyun](https://pan.baidu.com/s/1vDKWCW3dO-JX_ET4OgsNww)] the password is ydzl. [[GoogleDrive](https://drive.google.com/drive/folders/1-6BvZLtSbu96cjAW7KpDNNrwPhJz99V3?usp=sharing)].
-  - We uploaded four models trained on VL-CMU-CD dataset, ther are SViT_E1_D1_16, SViT_E1_D1_32, Res_SViT_E1_D1_16 and Res_SViT_E1_D1_32.
+  - We uploaded four models trained on VL-CMU-CD dataset, they are SViT_E1_D1_16, SViT_E1_D1_32, Res_SViT_E1_D1_16 and Res_SViT_E1_D1_32.
 ## Test
 Before test, please download datasets and pretrained models. Copy pretrained models to folder './dataset_name/outputs/best_weights', and run the following command: 
 ```
@@ -30,7 +30,7 @@ python test.py --net_cfg <net name> --train_cfg <training configuration>
 Use `--save_changemap True` to save predicted changemaps.
 For example:
 ```
-python test.py --net_cfg SVit_E1_D1_32 --train_cfg CDNet_2014 --save_changemap True
+python test.py --net_cfg SViT_E1_D1_32 --train_cfg CDNet_2014 --save_changemap True
 ```
 
 ## Training
