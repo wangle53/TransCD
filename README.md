@@ -16,6 +16,7 @@ Torchvision 0.7.0
 - VL-CMU-CD
   - paper: [Street-view change detection with deconvolutional networks](http://www.robesafe.com/personal/roberto.arroyo/docs/Alcantarilla16rss.pdf)
   - dataset:  https://ghsi.github.io/proj/RSS2016.html
+  - if the above link didn't work, please try this baidudisk link: [[Baiduyun]](https://pan.baidu.com/s/1-PfS4P8Fij_dkjJXpLkHUQ) the password is: v82c
   
 
 ## Pretrained Model
